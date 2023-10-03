@@ -1,5 +1,4 @@
-# ignore ALL .log files
+# ignore ALL .replit & replit.nix files
 .replit
 
-# ignore ALL files in ANY directory named temp
 replit.nix
