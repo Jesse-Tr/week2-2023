@@ -15,18 +15,18 @@ const fs = require("fs").promises;
 // if fs.readFile() successful, it returns data.
 // use then() method to handle success contents parameter contains html file data.
 
-const reqListener = function (req,res){
-  
+const reqListener = function(req, res) {
+
   // request url
   console.log(req.url);
 
-  if (req.url === "/"){
+  if (req.url === "/") {
 
     //check request url, if root, return html file.
     fs.readFile(__dirname + "/home.html").then(contents => {
 
       //set http response header entry
-      res.setHeader("content-type","text/html; charset = UTF-8");
+      res.setHeader("content-type", "text/html; charset = UTF-8");
 
       // return 200 ok http status
       res.writeHead(200);
@@ -41,7 +41,7 @@ const reqListener = function (req,res){
     fs.readFile(__dirname + "/list.json").then(contents => {
 
       //set http response header entry
-      res.setHeader("content-type","text/html; charset = UTF-8");
+      res.setHeader("content-type", "text/html; charset = UTF-8");
 
       // return 200 ok http status
       res.writeHead(200);
