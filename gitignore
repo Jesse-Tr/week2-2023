@@ -1,4 +1,5 @@
-# ignore ALL .replit & replit.nix files
+# ignore ALL .replit files
 .replit
 
+# ignore replit.nix file
 replit.nix
